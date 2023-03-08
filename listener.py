@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 import rospy                                                                # Importa la libreria de Python en ROS
-from std_msgs.msg import String                                             # Importa el tipo de mensaje Strung de std_msgs
+from std_msgs.msg import String                                             # Importa el tipo de mensaje String de std_msgs
 
 def chatter_callback(message):                                              # Esta funcion es llamada cada que se reciba un mensaje
     rospy.loginfo(rospy.get_caller_id() + "I heard %s", message.data)       # Imprime el mensaje recibido junto al nombre del nodo
